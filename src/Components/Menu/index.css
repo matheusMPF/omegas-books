@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070707;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .logo,
+  .menu-itens{
+    padding: 8px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-left: 5vh;
+    font-size: 20px;
+    font-family: 'Dancing Script', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .logo:hover{
+    transform: scale(1.20);
+    color: #6e6e6e;
+  }
+  
+  .menu-itens {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu-itens li{
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-right: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-itens li:hover {
+    text-decoration: none;
+    transform: scale(1.20);
+    color: #6e6e6e;
+  }
