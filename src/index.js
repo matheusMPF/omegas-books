@@ -10,11 +10,13 @@ import Home from "./Pages/Home"
 import Autores from "./Pages/Autores"
 import Colecoes from "./Pages/Colecoes"
 import Sobre from './Pages/Sobre';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Menu />,
+    errorElement: <ErrorPage/>,
     children: [
 
       {
