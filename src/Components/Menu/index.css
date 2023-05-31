@@ -10,7 +10,7 @@ nav {
 
   .logo,
   .menu-itens{
-    padding: 8px;
+    padding: 6px;
   }
   
   .logo {
@@ -40,11 +40,11 @@ nav {
     margin-right: 10px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    margin-right: 5vh;
+    margin-right: 3vh;
     display: flex;
     flex-direction: column;
   }
-  
+
   .menu-itens li:hover {
     text-decoration: none;
     transform: scale(1.20);

@@ -1,20 +1,32 @@
 import React from 'react';
-import './index.css'
+import './index.css';
+import { Outlet } from "react-router-dom";
 
 const Menu = () => {
     return (
+        <>
 
-        <nav>
+            <nav>
 
-            <div className="logo">Ω Books</div>
+                <div className="logo">Ω Books</div>
 
-            <ul className="menu-itens">
-                <li><a>Livros</a></li>
-                <li><a>Autores</a></li>
-                <li><a>Coleções</a></li>
-                <li><a>Sobre</a></li>
-            </ul>
-        </nav>
+                <ul className="menu-itens">
+                    <li>Home</li>
+                    <li>Autores</li>
+                    <li>Coleções</li>
+                    <li>Sobre</li>
+                </ul>
+
+            </nav>
+
+            <Outlet />
+        </>
+
+
+
+
+
+
     );
 };
 
