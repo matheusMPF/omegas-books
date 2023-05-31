@@ -36,16 +36,18 @@ nav {
     list-style: none;
   }
   
-  .menu-itens li{
+  .menu-itens li .li{
     margin-right: 10px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin-right: 3vh;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: #fff;
   }
 
-  .menu-itens li:hover {
+  .menu-itens li .li:hover {
     text-decoration: none;
     transform: scale(1.20);
     color: #6e6e6e;
