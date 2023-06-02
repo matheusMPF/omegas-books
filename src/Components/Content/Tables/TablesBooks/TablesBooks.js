@@ -10,6 +10,8 @@ const TableBooks = () => {
 
             <div className="table-responsive">
 
+                
+
                 <table>
                     <CabecalhoBooks colum1="ID" colum2="Nome" colum3="Gênero" colum4="Autor(a)" colum5="Preço (R$)"  />
                     <LinesTable dado1="01" dado2="O pequeno príncipe" dado3="Infantil" dado4="indefined" dado5="25,00"  />

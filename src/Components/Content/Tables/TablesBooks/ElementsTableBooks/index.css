@@ -1,40 +1,97 @@
+/*Estilo da table*/
 .table-container {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    max-width: 90%;
+    margin: auto;
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #070707;
   }
+
+  /*Titulo*/
+  h2{
+    color: #fff
+  }
+
+  .NewBook{
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    align-items: end;
+    width: 100%;
+    transition: 0.6s ease-in-out;
+    font-size: 12px;
+  }
+
+  .NewBook:hover{
+    color: #070707;
+    background-color: rgb(62, 218, 62);
+    font-weight: bold ;
+  }
+
+/*Cabeçalho da tabela*/
 
 th{
+  
     background-color: #070707;
+    font-size: large;
+    
 }
 
+/*Dados da tabela*/
+
+
   td {
-    padding: 8px;
     background-color: #181920;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px;
   }
 
-  td:hover{
+  .dados:hover{
     background-color: #2f3038;
   }
 
-  thead {
-    background-color: #202020;
+/*Botôes de excluir, editar e validar*/
+
+  .area-button{
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    width: 10vh;
   }
 
-  .table-responsive {
-    overflow-x: auto;
+  .area-button:hover{
+    background-color: #2f3038;
+    transform: scale(1.15);
   }
 
+  .excluir, .editar, .validar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .excluir{
+    color: rgb(230, 41, 41);
+  }
+
+  .editar{
+    color: rgb(60, 60, 228);
+  }
+
+  .validar{
+    color: rgb(58, 209, 58);
+  }
+
+  
   /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .table th,
-    .table td {
-      white-space: nowrap;
-    }
 
-}
+

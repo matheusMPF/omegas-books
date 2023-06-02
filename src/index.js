@@ -12,6 +12,7 @@ import Colecoes from "./Pages/Colecoes";
 import Sobre from './Pages/Sobre';
 import ErrorPage from './Pages/ErrorPage';
 import AdminBooks from './Pages/AdminBooks';
+import FormBook from './Pages/FormBook';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "adminbooks",
         element: <AdminBooks/>
+      },
+
+      {
+        path: "/adminBooks/formbook",
+        element: <FormBook/>
       },
 
      
