@@ -1,0 +1,40 @@
+.table-container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #070707;
+  }
+
+th{
+    background-color: #070707;
+}
+
+  td {
+    padding: 8px;
+    background-color: #181920;
+  }
+
+  td:hover{
+    background-color: #2f3038;
+  }
+
+  thead {
+    background-color: #202020;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .table th,
+    .table td {
+      white-space: nowrap;
+    }
+
+}
