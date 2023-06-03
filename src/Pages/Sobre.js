@@ -1,10 +1,11 @@
 import React from "react";
+import SobreNos from "../Components/Content/Sobre/SobreNos";
 
 const Sobre = () => {
 
     return(
         <>
-            <h1>Aqui ficará conteudo sobre os criadores da pag.</h1>
+            <SobreNos/>
         </>
     )
 

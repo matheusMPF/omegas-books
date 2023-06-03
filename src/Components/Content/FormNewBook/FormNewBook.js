@@ -16,7 +16,7 @@ const FormNewBook = () => {
                 <ElementsForm type="Text" id="Autor" name="autor" placeholder="Informe o nome do autor" />
                 <ElementsForm type="Number" id="valor" name="valor" placeholder="Informe o valor do livro" />
 
-                <button type="submit">Enviar</button>
+                <button type="submit" className="buttonSubmit">Enviar</button>
             </form>
         </div>
 

@@ -31,7 +31,7 @@ form {
     
   }
 
-  button {
+  .buttonSubmit{
     width: 100%;
     padding: 10px;
     background-color: #2297fd;
@@ -43,7 +43,7 @@ form {
     transition: 0.2s ease-in-out;
   }
 
-  button:hover{
+  .buttonSubmit:hover{
     color: #fff;
     background-color: #074b86;
     transform: scale(1.05);
