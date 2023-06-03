@@ -1,6 +1,18 @@
+.list-books{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 30px;
+    justify-content: center;
+    color: #C0D0F7;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
 .card-book {
+    margin-top: 5vh;
     background-color: #181920;
-    width: 200px;
+    width: 220px;
     padding: 10px;
     display: flex;
     flex-direction: column;

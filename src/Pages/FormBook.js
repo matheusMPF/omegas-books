@@ -1,10 +1,11 @@
 import React from "react";
+import FormNewBook from "../Components/Content/FormNewBook/FormNewBook";
 
 const FormBook = () => {
 
     return(
         <>
-            <h1>Aqui ficará o formulario para add  novo livro</h1>
+         <FormNewBook/>
         </>
     )
 

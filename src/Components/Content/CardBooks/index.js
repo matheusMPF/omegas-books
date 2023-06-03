@@ -2,7 +2,6 @@ import "./index.css"
 
 const CardBooks = (props) => {
 
-    {
         const {src, alt} = props;
     
 
@@ -25,7 +24,6 @@ const CardBooks = (props) => {
         
     );
 
-    }
 
 }
 

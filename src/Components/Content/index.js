@@ -3,7 +3,6 @@ import Cinderela from "../Imagens/cinderela.jpg";
 import BelaFera from "../Imagens/bela-fera.jpg";
 import Chapeuzinho from "../Imagens/chapeuzinho.jpg";
 import PequenoPrincipe from "../Imagens/pequeno-príncipe.jpg";
-import "./index.css";
 
 const Content = () => {
 
