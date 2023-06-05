@@ -1,11 +1,14 @@
 import React from "react";
 import "./CardDevs.css"
+import Github from "../../../Imagens/github.png"
+import LinkedIn from "../../../Imagens/linkedin.png"
+
 
 const CardDevs = (props) => {
 
-    const {src, alt} = props;
+    const { src, alt } = props;
 
-    return(
+    return (
         <>
             <li className="card-dev">
                 <div class="name-dev">
@@ -18,10 +21,25 @@ const CardDevs = (props) => {
                     <li className={props.classfuncao2}>{props.funcao2}</li>
                 </ul>
 
-                <p className="resumo">{props.descricao}
+                <div>
+                    <p className="descricao">{props.descricao}</p>
 
-                </p>
-            </li>
+                    <div className="area-redes">
+                        <div>
+
+                            <a href={props.hrefGithub}>
+                                <img src={Github} alt="Github" className="redes" />
+                            </a>
+
+                            <a href={props.hrefLinkedin}>
+                                <img src={LinkedIn} alt="LinkedIn" className="redes" />
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </li >
         </>
     )
 

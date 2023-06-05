@@ -1,12 +1,13 @@
 .list-devs{
     flex-wrap: wrap;
-    width: 100%;
-    gap: 30px;
+    width: 90%;
+    
     justify-content: center;
     color: #C0D0F7;
     font-family: 'Roboto', sans-serif;
     margin: auto;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
 }
 
@@ -17,15 +18,12 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    cursor: pointer;
+    gap: 25px;
     border-radius: 15px;
-    transition: 0.2s ease-in-out;
 }
 
 .card-dev:hover{
     background-color:  #2f3038;
-    transform: scale(1.05);
 }
 
 .card-dev .name-dev{
@@ -58,6 +56,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    list-style: none;
     gap: 15px;
     padding: 8px;
     border-radius: 10px;
@@ -71,6 +70,14 @@
     background-color: #bd621c;
 }
 
+.frontend{
+    background-color: rgb(160, 160, 17);
+}
+
+.backend{
+    background-color: rgb(148, 5, 5);
+}
+
 p{
     display: block;
     margin-block-start: 0em;
@@ -81,8 +88,11 @@ p{
 
 li .descricao{
     max-height: 140px;
+    font-size: 18px;
+    padding-right: 8px; 
     overflow-y: scroll;
-    font-size: 17px;
-    padding-right: 8px;
-    
+}
+
+.redes{
+    width: 33px;
 }

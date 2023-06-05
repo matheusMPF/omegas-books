@@ -4,7 +4,7 @@ const Colecoes = () => {
 
     return(
         <>
-            <h1>Aqui ficará as coleções da pag.</h1>
+            <h1>Página de coleções em desenvolvimento...</h1>
         </>
     )
 
