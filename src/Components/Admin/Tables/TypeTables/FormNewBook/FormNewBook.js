@@ -1,5 +1,6 @@
 import React from "react";
 import ElementsForm from "./ElementsForm/ElementsForm";
+import "./FormNewBook.css"
 
 const FormNewBook = () => {
 

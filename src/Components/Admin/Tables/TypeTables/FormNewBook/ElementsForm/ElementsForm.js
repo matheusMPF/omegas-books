@@ -1,6 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import "./index.css"
 
 const ElementsForm = (props) => {
 

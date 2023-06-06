@@ -4,7 +4,7 @@ const Autores = () => {
 
     return(
         <>
-            <h1>Página de Autores em desenvolvimento</h1>
+            <h1>Página de Autores em desenvolvimento...</h1>
         </>
     )
 

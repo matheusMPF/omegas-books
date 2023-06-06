@@ -11,8 +11,8 @@ import Autores from "./Pages/Autores";
 import Colecoes from "./Pages/Colecoes";
 import Sobre from './Pages/Sobre';
 import ErrorPage from './Pages/ErrorPage';
-import AdminBooks from './Pages/AdminBooks';
-import FormBook from './Pages/FormBook';
+import AdminPage from './Pages/AdminPage';
+import FormNewBook from './Components/Admin/Tables/TypeTables/FormNewBook/FormNewBook';
 
 const router = createBrowserRouter([
   {
@@ -42,17 +42,20 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "adminbooks",
-        element: <AdminBooks/>
+        path: "admin",
+        element: <AdminPage/>
       },
 
       {
-        path: "/adminBooks/formbook",
-        element: <FormBook/>
+        path: "/adimin/formnewbook",
+        element: <FormNewBook/>
       },
 
      
     ]
+
+    
+
   },
 
 ])

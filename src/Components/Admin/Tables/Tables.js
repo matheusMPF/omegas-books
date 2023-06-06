@@ -1,4 +1,6 @@
-import TableBooks from "./TablesBooks/TablesBooks";
+import React from "react";
+import TableBooks from "./TypeTables/TableBooks";
+import "./Tables.css"
 
 const Tables = () => {
 
