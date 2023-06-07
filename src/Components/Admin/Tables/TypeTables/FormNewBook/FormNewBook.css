@@ -4,6 +4,7 @@
 
 .title{
     text-align: center;
+    padding-bottom: 10px;
     color: #C0D0F7;
     font-size: large;
     font-weight: bold;
@@ -11,18 +12,17 @@
 
 form {
     width: 50vh;
-    padding: 38px;
+    padding: 35px;
     background-color: #181920;
     border-radius: 20px;
     margin: auto;
     margin-top: 5vh;
-    margin-bottom: 10vh;
     font-family: 'Roboto', sans-serif;
     align-items: center;
   }
 
-  input,
-  select {
+  form input,
+  form select {
     width: 100%;
     padding: 15px;
     border: none;
@@ -31,15 +31,17 @@ form {
     color: #C0D0F7;
     box-sizing: border-box;
     outline: none;
+    margin-bottom: 10px;
     
   }
 
-  select{
-    margin-bottom: 15px;
+  form select .genero{
+    background-color: #1c1c1c;
   }
 
-  .infoGenero{
-    color: #074b86;
+ form select .infoGen{
+    background-color: #1c1c1c;
+    color: #676868;
   }
 
   .buttonSubmit{
