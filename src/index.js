@@ -6,13 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Home from "./Pages/Home";
 import Autores from "./Pages/Autores";
 import Colecoes from "./Pages/Colecoes";
 import Sobre from './Pages/Sobre';
 import ErrorPage from './Pages/ErrorPage';
 import AdminPage from './Pages/AdminPage';
 import FormNewBook from './Components/Admin/Tables/TypeTables/FormNewBook/FormNewBook';
+import HomePage from './Pages/HomePage';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 
       {
         path: "/",
-        element: <Home />
+        element: <HomePage />
       },
 
       {
