@@ -27,7 +27,9 @@ const SobreNos = () => {
 
                 <CardDevs nameDev="Sanderlan Jales" src="" alt="Sanderlan"
                     classfuncao1="backend"
+                    classfuncao2="bancoDeDados"
                     funcao1="Backend"
+                    funcao2="Banco de dados"
                     descricao="..."
                     hrefGithub=""
                     hrefLinkedin="" />

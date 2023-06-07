@@ -50,7 +50,8 @@
 .card-dev .funcao .lider,
 .card-dev .funcao .fullstack,
 .card-dev .funcao .frontend,
-.card-dev .funcao .backend
+.card-dev .funcao .backend,
+.card-dev .funcao .bancoDeDados
 {
 
     display: flex;
@@ -76,6 +77,10 @@
 
 .backend{
     background-color: rgb(148, 5, 5);
+}
+
+.bancoDeDados{
+    background-color: rgb(19, 128, 19);
 }
 
 p{
