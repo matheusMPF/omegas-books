@@ -8,6 +8,7 @@
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    margin-bottom: 5vh;
 }
 
 .card-dev {

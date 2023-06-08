@@ -4,6 +4,7 @@ import BelaFera from "../../Imagens/bela-fera.jpg";
 import Chapeuzinho from "../../Imagens/chapeuzinho.jpg";
 import PequenoPrincipe from "../../Imagens/pequeno-príncipe.jpg";
 import CardBooks from "./CardBooks";
+import Footer from "../../Footer/Footer";
 
 const Home = () => {
 
@@ -35,6 +36,9 @@ const Home = () => {
                 cuidado e descobertas sobre o valor da amizade e da conexão emocional." />
 
             </ul>
+
+
+            <Footer/>
         </div>
     );
 

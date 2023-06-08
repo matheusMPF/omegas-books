@@ -7,7 +7,7 @@ const Footer = () => {
             <div class="footer-content">
 
                 <div className="content-left">
-                    <h3>Ômegas Books</h3>
+                    <p className="title-footer">Ômegas Books</p>
                     <p>Um projeto da faculdade com intuito de criar um
                         e-commerce de livros usando o framework React. 
                         somos um grupo de três estudantes de ADS (análise e desenvolvimento

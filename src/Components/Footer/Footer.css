@@ -14,8 +14,17 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
+
+  .title-footer{
+    font-size: 16px;
+  }
   
   .footer-content a {
-    color: #446bd6;
+    color: #448fd6;
+    text-decoration: none;
+  }
+
+  .footer-content a:hover{
+    color: #244192;
     text-decoration: none;
   }

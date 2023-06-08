@@ -29,7 +29,8 @@ nav {
 .logo:hover {
   transform: scale(1.20);
   color: #ffea00;
-  text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00, 0 0 30px #ffea00, 0 0 40px #ffea00, 0 0 70px #ffea00, 0 0 80px #ffea00, 0 0 100px #ffea00, 0 0 150px #ffea00;
+  text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00, 0 0 30px #ffea00, 0 0 40px
+   #ffea00, 0 0 70px #ffea00, 0 0 80px #ffea00, 0 0 100px #ffea00, 0 0 150px #ffea00;
   animation: neon-blink 1.5s ease-in-out infinite alternate;
 }
 
