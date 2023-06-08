@@ -1,54 +1,69 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #070707;
-    color: #fff;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070707;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .logo,
-  .menu-itens{
-    padding: 6px;
-  }
-  
-  .logo {
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    margin-left: 5vh;
-    font-size: 20px;
-    font-family: 'Dancing Script', sans-serif;
-    text-transform: uppercase;
-  }
+.logo,
+.menu-itens {
+  padding: 6px;
+}
 
-  .logo:hover{
-    transform: scale(1.20);
-    color: #6e6e6e;
-  }
-  
-  .menu-itens {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .menu-itens li .li{
-    margin-right: 10px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    margin-right: 3vh;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #fff;
-  }
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  margin-left: 5vh;
+  font-size: 20px;
+  font-family: 'Dancing Script', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+ 
 
-  .menu-itens li .li:hover {
-    text-decoration: none;
-    transform: scale(1.20);
-    color: #6e6e6e;
+}
+
+.logo:hover {
+  transform: scale(1.20);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+  #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+ animation: neon-blink 1.5s ease-in-out infinite alternate;
+
+}
+
+@keyframes neon-blink {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.menu-itens {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-itens li .li {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-right: 3vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-itens li .li:hover {
+  text-decoration: none;
+  transform: scale(1.20);
+  color: #6e6e6e;
+}

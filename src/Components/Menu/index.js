@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 import './index.css';
 import { Outlet } from "react-router-dom";
+import Footer from '../Footer/Footer';
 
 const Menu = () => {
     return (
@@ -20,6 +21,8 @@ const Menu = () => {
             </nav>
 
             <Outlet />
+
+            <Footer/>
         </>
 
 
