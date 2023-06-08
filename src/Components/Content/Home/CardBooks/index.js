@@ -14,7 +14,7 @@ const CardBooks = (props) => {
                 <img src={src} alt={alt} className="imagem-book" />
 
                 <ul className="tipo-genero">
-                    <li className={props.classGenero}>{props.genero}</li>
+                    <li className={props.genero}>{props.genero}</li>
                 </ul>
 
 
