@@ -10,7 +10,6 @@ import Autores from "./Pages/Autores";
 import Sobre from './Pages/Sobre';
 import ErrorPage from './Pages/ErrorPage';
 import AdminPage from './Pages/AdminPage';
-import FormNewBook from './Components/Admin/Tables/TypeTables/FormNewBook/FormNewBook';
 import HomePage from './Pages/HomePage';
 import ColecoesPage from './Pages/ColecoesPage';
 
@@ -45,13 +44,7 @@ const router = createBrowserRouter([
         path: "admin",
         element: <AdminPage/>
       },
-
-      {
-        path: "/adimin/formnewbook",
-        element: <FormNewBook/>
-      },
-
-     
+ 
     ]
 
     

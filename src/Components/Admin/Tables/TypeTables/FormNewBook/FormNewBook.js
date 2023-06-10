@@ -1,34 +1,79 @@
 import React from "react";
-import InputNewForm from "./ElementsForm/inputNewBook";
 import "./FormNewBook.css"
-import SelectNewBook from "./ElementsForm/SelectNewBook";
+import { useState } from "react";
+import axios from "axios";
+
 
 const FormNewBook = () => {
 
+    const [id, setId] = useState("");
+    const [title, setTitle] = useState("");
+    const [gender, setGender] = useState("");
+    const [author, setAuthor] = useState("");
+    const [cost, setCost] = useState("");
+
+    const addBook = async (event) => {
+        event.preventDefault();
+
+        const book = {id, title, gender, author, cost};
+
+        try {
+            await axios.post('http://localhost:3000/admin', book);
+            alert('Livro adicionado com sucesso!');
+            setId('');
+            setTitle('');
+            setGender('');
+            setAuthor('');
+            setCost('');
+
+          } catch (error) {
+            console.error(error);
+            alert('Erro ao adicionar o livro.');
+          }
+    };
+
     return (
-        <div className="container">
-            <form>
-                <div className="title">
-                    <h3>Adicione um novo livro:</h3>
-                </div>
+        
 
-                <InputNewForm type="Number" id="id" name="id" 
-                placeholder="Informe o ID do livro" />
+            <form onSubmit={addBook}> 
 
-                <InputNewForm type="Text" id="NameBook" name="NameBook" 
-                placeholder="Informe o nome do livro" />
+                <input type="number" id="id" name="id"
+                    required placeholder="Id" value={id} 
+                    onChange={(event) => setId(event.target.value)} />
 
-                <SelectNewBook name="genero"/>
+                <input type="text" id="title" name="title"
+                    required placeholder="Título"  value={title} 
+                    onChange={(event) => setTitle(event.target.value)} />
 
-                <InputNewForm type="Text" id="Autor" name="autor" 
-                placeholder="Informe o nome do autor" />
+                <select id="gender" name="gender" required
+                     value={gender} onChange={(event) => setGender(event.target.value)}>
 
-                <InputNewForm type="Number" id="valor" name="valor" 
-                placeholder="Informe o valor do livro" />
+                    <option className="infoGen">Gênero</option>
+                    <option className="genero">Aventura</option>
+                    <option className="genero">Suspense</option>
+                    <option className="genero">Comédia</option>
+                    <option className="genero">Mistério</option>
+                    <option className="genero">Infantil</option>
+                    <option className="genero">Terror</option>
+                    <option className="genero">Poema</option>
+                    <option className="genero">Educativo</option>
+                    <option className="genero">Fábula</option>
+                    <option className="genero">Ficção</option>
 
-                <button type="submit" className="buttonSubmit">Enviar</button>
+                </select>
+
+                <input type="text" id="author" name="author"
+                    required placeholder="Autor"  value={author} 
+                    onChange={(event) => setAuthor(event.target.value)} />
+
+                <input type="text" id="cost" name="cost"
+                    required placeholder="Preço"  value={cost} 
+                    onChange={(event) => setCost(event.target.value)} />
+
+                <button type="submit" className="buttonSubmit">+ Novo livro</button>
+
+
             </form>
-        </div>
 
     )
 

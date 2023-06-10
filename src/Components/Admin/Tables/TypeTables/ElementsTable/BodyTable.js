@@ -1,23 +1,34 @@
-import BodyTd from "./Elements/BodyTd";
-
 const BodyTable = () => {
+
+    const td = [
+        { id: "idBook", title: "01" },
+        { id: "titleBook", title: "O pequeno principe e a rosa" },
+        { id: "generoBook", title: "Infantil" },
+        { id: "athotBook", title: "Indefined" },
+        { id: "costBook", title: "R$ 24,99" },
+
+    ]
+
+    const button = [
+        { class: "excluir", title: "Excluir", name: "X" },
+        { class: "editar", title: "Editar", name: "✏️" },
+    ]
 
     return (
 
         <tbody>
-            <BodyTd dado1="01" dado2="Cinderela" dado3="Infantil"
-                dado4="Indefined" dado5="29,99" />
+            <tr>
+
+                {td.map(td => (
+                    <td id={td.id}>{td.title}</td>
+                ))}
 
 
-            <BodyTd dado1="02" dado2="O pequeno príncipe" dado3="Infantil"
-                dado4="Indefined" dado5="29,99" />
+                {button.map(button => (
+                    <td title={button.title}><button className={button.class}>{button.name}</button></td>
+                ))}
 
-            <BodyTd dado1="03" dado2="A bela e a fera" dado3="Infantil"
-                dado4="Indefined" dado5="29,99" />
-
-            <BodyTd dado1="04" dado2="Chapeuzinho vermelho" dado3="Infantil"
-                dado4="Indefined" dado5="29,99" />
-
+            </tr>
         </tbody>
     )
 

@@ -1,12 +1,23 @@
-import HeaderTh from "./Elements/HeaderTh";
-
 const CabecaTable = () => {
+
+    const colum = [
+        {name: "id"},
+        {name: "Título"},
+        {name: "Genêro"},
+        {name: "Autor"},
+        {name: "Preço"},
+        {name:""},
+        {name:""},
+    ]
 
     return (
         <>
             <thead>
                 <tr>
-                    <HeaderTh colum1="id" colum2="Nome" colum3="Gênero" colum4="Autor" colum5="Valor"/>
+                    {colum.map(colum=>(
+                        <th>{colum.name}</th>
+                    ))}
+                   
                 </tr>
             </thead>
         </>

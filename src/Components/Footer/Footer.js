@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css"
 
 const Footer = () => {
@@ -23,7 +24,8 @@ const Footer = () => {
                 </div>
 
                 <div className="content-rigth">
-                    <p>Não tem uma conta? Faça seu <a href="cadastro.html">Cadastro aqui</a></p>
+                    <p>Não tem uma conta? Faça seu <Link to="/"><a 
+                    href="cadastro.html">Cadastro aqui</a></Link></p>
                     
                 </div>
 

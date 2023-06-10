@@ -1,21 +1,22 @@
 import React from "react";
 import CabecaTable from "./ElementsTable/CabecaTable";
 import BodyTable from "./ElementsTable/BodyTable";
-
-
+import FormNewBook from "./FormNewBook/FormNewBook";
 
 const TableBooks = () => {
 
-    return(
-        <div className="table-container">
+    return (
+        <div className="container">
 
-            <h2 className="TitleTable">Tabela de livros</h2>
+            <div className="container-form">
+                <FormNewBook />
+            </div>
 
             <div className="table-responsive">
 
                 <table>
-                  <CabecaTable/>
-                  <BodyTable/>
+                    <CabecaTable />
+                    <BodyTable />
                 </table>
 
             </div>
