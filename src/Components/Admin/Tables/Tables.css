@@ -1,61 +1,49 @@
-/*Estilo da table*/
 .container {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    max-width: 70%;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-
-  table {
-    margin: auto;
-    width: 75%;
-    border-collapse: collapse;
-  }
-
-/*Cabeçalho da tabela*/
-
-th{
-  
-    background-color: #070707;
-    font-size: large;
-    
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
-/*Dados da tabela*/
+table {
+  margin: auto;
+  width: 75%;
+  border-collapse: collapse;
+}
 
+th {
 
-  td {
-    background-color: #181920;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 8px;
-  }
+  background-color: #070707;
+  font-size: large;
 
-  td:hover{
-    background-color: #2f3038;
-  }
+}
 
-/*Botôes de excluir, editar e validar*/
+td {
+  background-color: #181920;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.2s ease-in-out;
+}
 
-  .area-button:hover{
-    background-color: #382f2f;
-    transform: scale(1.15);
-  }
+td:hover {
+  background-color: #2f3038;
+}
 
-  .excluir, .editar, .validar{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: #fff;
-  }
+.area-button:hover {
+  background-color: #382f2f;
+}
 
-  .excluir{
-    color: rgb(230, 41, 41);
-  }
+.excluir,
+.editar {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
 
-  .validar{
-    color: rgb(58, 209, 58);
-  }
+.excluir {
+  color: rgb(230, 41, 41);
+}

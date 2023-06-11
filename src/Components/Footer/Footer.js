@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div class="footer-content">
+            <div className="footer-content">
 
                 <div className="content-left">
                     <p className="title-footer">Ômegas Books</p>
@@ -24,8 +24,7 @@ const Footer = () => {
                 </div>
 
                 <div className="content-rigth">
-                    <p>Não tem uma conta? Faça seu <Link to="/"><a 
-                    href="cadastro.html">Cadastro aqui</a></Link></p>
+                    <p>Não tem uma conta? Faça seu <Link to="/">Cadastro aqui</Link></p>
                     
                 </div>
 

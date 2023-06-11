@@ -11,7 +11,7 @@ const CardDevs = (props) => {
     return (
         <>
             <li className="card-dev">
-                <div class="name-dev">
+                <div className="name-dev">
                     <span>{props.nameDev}</span>
                 </div>
                 <img src={src} alt={alt} className="imagem-dev" />

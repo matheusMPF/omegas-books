@@ -95,6 +95,7 @@ li .descricao{
     max-height: 140px;
     font-size: 18px;
     padding-right: 8px; 
+    overflow-y: scroll;
 }
 
 .redes{

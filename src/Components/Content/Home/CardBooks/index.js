@@ -8,7 +8,7 @@ const CardBooks = (props) => {
     return (
         
             <li className="card-book">
-                <div class="name-book">
+                <div className="name-book">
                     <span>{props.nameBook}</span>
                 </div>
                 <img src={src} alt={alt} className="imagem-book" />
