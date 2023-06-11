@@ -9,7 +9,7 @@
 
 table {
   margin: auto;
-  width: 75%;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -20,24 +20,23 @@ th {
 
 }
 
-td {
+td, input {
   background-color: #181920;
   border-radius: 20px;
   cursor: pointer;
-  padding: 8px;
+  border: none;
+  padding: 3px;
   transition: 0.2s ease-in-out;
 }
 
-td:hover {
+td:hover,
+input:hover {
   background-color: #2f3038;
-}
-
-.area-button:hover {
-  background-color: #382f2f;
 }
 
 .excluir,
 .editar {
+  background-color: transparent;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -46,4 +45,26 @@ td:hover {
 
 .excluir {
   color: rgb(230, 41, 41);
+  padding: 5px;
 }
+
+/* Estilo após clicar em editar */
+
+input {
+  outline: none;
+  color: gray;
+}
+
+.salvar {
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
