@@ -23,6 +23,7 @@ form {
     color: #C0D0F7;
     box-sizing: border-box;
     outline: none;
+    overflow: hidden;
     
   }
 
