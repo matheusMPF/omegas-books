@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
 import './FormNewBook.css';
 
 const FormNewBook = () => {
@@ -13,7 +12,7 @@ const FormNewBook = () => {
     event.preventDefault();
 
     axios
-      .put(`http://localhost:8080/api/bookstore/admin/${idTitle}`, {
+      .put(`http://localhost:8080/api/bookstore/admin`, {
         nome: nomeTitle,
       })
       .then(function (response) {
