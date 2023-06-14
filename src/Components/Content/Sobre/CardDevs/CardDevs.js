@@ -6,15 +6,12 @@ import LinkedIn from "../../../Imagens/linkedin.png"
 
 const CardDevs = (props) => {
 
-    const { src, alt } = props;
-
     return (
         <>
             <li className="card-dev">
                 <div className="name-dev">
                     <span>{props.nameDev}</span>
                 </div>
-                <img src={src} alt={alt} className="imagem-dev" />
 
                 <ul className="funcao">
                     <li className={props.classfuncao1}>{props.funcao1}</li>
