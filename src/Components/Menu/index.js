@@ -8,7 +8,7 @@ const Menu = () => {
 
             <nav>
 
-                <div className="logo">Ω Books</div>
+                <div ><Link to="/" className="Logo">Ω Books</Link></div>
 
                 <ul className="menu-itens">
                     <li><Link to="/" className='li'>Home</Link></li>
@@ -23,11 +23,6 @@ const Menu = () => {
 
            
         </>
-
-
-
-
-
 
     );
 };

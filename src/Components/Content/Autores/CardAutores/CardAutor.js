@@ -1,5 +1,4 @@
 import "./CardAutor.css"
-
 const CardAutor = (props) => {
 
         const {src, alt} = props;
@@ -7,14 +6,14 @@ const CardAutor = (props) => {
 
     return (
         
-            <li className="card-book">
-                <div className="name-book">
-                    <span>{props.nameBook}</span>
+            <li className="card-author">
+                <div className="name-author">
+                    <span>{props.nameAuthor}</span>
                 </div>
-                <img src={src} alt={alt} className="imagem-book" />
+                <img src={src} alt={alt} className="imagem-author" />
 
-                <ul className="tipo-genero">
-                    <li className={props.classGenero}>{props.genero}</li>
+                <ul className="obra-author">
+                    <li className="obras">{props.obra}</li>
                 </ul>
 
 

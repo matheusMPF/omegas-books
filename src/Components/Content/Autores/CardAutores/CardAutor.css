@@ -1,8 +1,4 @@
-body{
-    background-color: #000000;
-}
-
-.list-books{
+.list-author{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -13,7 +9,7 @@ body{
     margin: auto;
 }
 
-.card-book {
+.card-author {
     margin-top: 5vh;
     background-color: #181920;
     width: 220px;
@@ -27,19 +23,19 @@ body{
     transition: 0.2s ease-in-out;
 }
 
-.card-book:hover{
+.card-author:hover{
     background-color:  #2f3038;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
-.card-book .name-book{
+.card-author .name-author{
     display: flex;
     justify-content: space-between;
     border: 1px solid #C0D0F7;
     border-radius: 10px;
 }
 
-.card-book .name-book span{
+.card-author .name-author span{
     padding: 5px;
     text-transform: uppercase;
     font-weight: bold;
@@ -47,23 +43,22 @@ body{
     text-align: center;
 }
 
-.card-book .imagem-book{
-    width: 120px;
-    height: 160px;
+.card-author .imagem-author{
+    width: 160px;
+    height: 180px;
 }
 
-.card-book .tipo-genero,
-.card-book .tipo-genero .Infantil
+.card-author .obra-author,
+.card-author .obra-author .obras
 {
-
     display: flex;
     gap: 15px;
     padding: 8px;
     border-radius: 10px;
 }
 
-.Infantil{
-    background-color: #bd621c;
+.obras{
+    background-color: rgb(160, 160, 17);
 }
 
 p{

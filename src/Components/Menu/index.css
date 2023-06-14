@@ -3,7 +3,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #070707;
-  color: #fff;
   padding: 10px;
   font-family: 'Poppins', sans-serif;
 }
@@ -13,7 +12,11 @@ nav {
   padding: 6px;
 }
 
-.logo {
+nav div{
+  color: #fff;
+}
+
+.Logo {
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease-in-out;
@@ -21,12 +24,11 @@ nav {
   font-size: 20px;
   font-family: 'Dancing Script', sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
- 
-
 }
 
-.logo:hover {
+.Logo:hover {
   transform: scale(1.20);
   color: #ffea00;
   text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00, 0 0 30px #ffea00, 0 0 40px
