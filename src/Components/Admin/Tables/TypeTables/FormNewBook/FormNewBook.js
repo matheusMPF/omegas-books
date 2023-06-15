@@ -1,49 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './FormNewBook.css';
 
 const FormNewBook = () => {
-  const navigate = useNavigate();
-  const [nomeTitle, setNomeTitle] = useState('');
-  const [idTitle, setIdTitle] = useState('');
-
-  const atualizarBook = (event) => {
-    event.preventDefault();
-
-    axios
-      .put(`http://localhost:8080/api/bookstore/admin`, {
-        nome: nomeTitle,
-      })
-      .then(function (response) {
-        console.log(response);
-        navigate('/Admin');
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-
-  useEffect(() => {
-    pegaParametrosUrl();
-  }, []);
-
-  const pegaParametrosUrl = () => {
-    const url = new URL(window.location.href);
-    const searchParams = new URLSearchParams(url.search);
-
-    const title = searchParams.get('title');
-    const id = searchParams.get('id');
-
-    setNomeTitle(title);
-    setIdTitle(id);
-  };
-
+  
   return (
-    <form onSubmit={atualizarBook}>
-      <input type="number" id="id" name="id" required placeholder="Id" value={idTitle} onChange={(event) => setIdTitle(event.target.value)} />
+    <form className='Form-new-book'>
+      <input type="number" id="id" name="id" required placeholder="Id" value=""  />
 
-      <input type="text" id="title" name="title" required placeholder="Título" value={nomeTitle} onChange={(event) => setNomeTitle(event.target.value)} />
+      <input type="text" id="title" name="title" required placeholder="Título" value="" />
 
       <select id="gender" name="gender" required>
         <option className="infoGen">Gênero</option>

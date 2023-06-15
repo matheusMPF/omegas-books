@@ -1,0 +1,68 @@
+.Container-form {
+    display: flex;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.Form-Cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    border-radius: 20px;
+    margin: auto;
+    padding: 40px;
+    background-color: black;
+    
+}
+
+.Form-Cadastro h2{
+    font-family: 'Dancing Script', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.pCadastre-se{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.Form-Cadastro label{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.Form-Cadastro .Input-form-cadastro{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color:  #181920;
+    color: #C0D0F7;
+}
+
+.Form-Cadastro .btn-cadastrar{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #2297fd;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-cadastrar:hover{
+    background-color: #2297fd;
+    box-shadow: 0 0 20px rgba(34, 151, 253, 0.8);
+  }

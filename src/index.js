@@ -12,6 +12,7 @@ import AdminPage from './Pages/AdminPage';
 import HomePage from './Pages/HomePage';
 import ColecoesPage from './Pages/ColecoesPage';
 import AutoresPage from './Pages/AutoresPage';
+import CadastroPage from './Pages/CadastroPage';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "admin",
         element: <AdminPage/>
+      },
+
+      {
+        path: "cadastro",
+        element: <CadastroPage/>
       },
  
     ]

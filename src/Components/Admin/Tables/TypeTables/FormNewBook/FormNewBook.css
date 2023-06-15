@@ -1,4 +1,4 @@
-form {
+.Form-new-book {
     display: flex;
     width: 70%;
     padding: 20px;
@@ -13,8 +13,8 @@ form {
     
   }
 
-  form input,
-  form select {
+  .Form-new-book input,
+  .Form-new-book select {
     width: 15vh;
     padding: 10px;
     border: none;
@@ -27,11 +27,11 @@ form {
     
   }
 
-  form select .genero{
+  .Form-new-book select .genero{
     background-color: #1c1c1c;
   }
 
- form select .infoGen{
+ .Form-new-book select .infoGen{
     background-color: #1c1c1c;
     color: #676868;
   }

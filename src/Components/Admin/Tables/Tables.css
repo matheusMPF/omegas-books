@@ -20,7 +20,7 @@ th {
 
 }
 
-td, input {
+td{
   background-color: #181920;
   border-radius: 20px;
   cursor: pointer;
@@ -29,8 +29,7 @@ td, input {
   transition: 0.2s ease-in-out;
 }
 
-td:hover,
-input:hover {
+td:hover{
   background-color: #2f3038;
 }
 
@@ -47,21 +46,6 @@ input:hover {
   color: rgb(230, 41, 41);
   padding: 5px;
 }
-
-/* Estilo após clicar em editar */
-
-input {
-  outline: none;
-  color: gray;
-}
-
-.salvar {
-  border: none;
-  border-radius: 4px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 
 
 

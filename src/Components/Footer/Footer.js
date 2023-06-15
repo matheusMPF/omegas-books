@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
 
                 <div className="content-rigth">
-                    <p>Não tem uma conta? Faça seu <Link to="/">Cadastro aqui</Link></p>
+                    <p>Não tem uma conta? Faça seu <Link to="/cadastro">Cadastro aqui</Link></p>
                     
                 </div>
 
