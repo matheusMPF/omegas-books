@@ -10,9 +10,9 @@ import Sobre from './Pages/Sobre';
 import ErrorPage from './Pages/ErrorPage';
 import AdminPage from './Pages/AdminPage';
 import HomePage from './Pages/HomePage';
-import ColecoesPage from './Pages/ColecoesPage';
 import AutoresPage from './Pages/AutoresPage';
 import CadastroPage from './Pages/CadastroPage';
+import ColecoesPage from './Pages/ColecoesPage';
 
 const router = createBrowserRouter([
   {
@@ -32,11 +32,6 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "colecoes",
-        element: <ColecoesPage/>
-      },
-
-      {
         path: "sobre",
         element: <Sobre/>
       },
@@ -50,6 +45,12 @@ const router = createBrowserRouter([
         path: "cadastro",
         element: <CadastroPage/>
       },
+
+      {
+        path: "colecoes",
+        element: <ColecoesPage/>
+      },
+
  
     ]
 

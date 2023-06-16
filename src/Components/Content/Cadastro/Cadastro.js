@@ -2,28 +2,35 @@ import "./Cadastro.css"
 
 const Cadastro = () => {
 
-    return(
+
+
+    function cadastrar() {
+        var valorInputName = document.getElementById('nome')
+        var nome = valorInputName.value
+
+        alert(nome + " Seu cadastro foi realizado com sucesso")
+    }
+
+    return (
         <div className="Container-form">
 
             <form className="Form-Cadastro">
 
-                <h2>Ω Books</h2>
+                <p className="pCadastre-se">Faça seu cadastro:</p>
 
-                <p className="pCadastre-se">Faça o seu cadastro:</p>
+                <label>Nome:</label>
+                <input className="Input-form-cadastro" id="nome" type="text" required placeholder="Informe seu nome"></input>
 
-                <label>Nome completo</label>
-                <input className="Input-form-cadastro" type="text" required placeholder="Informe seu nome"></input>
-
-                <label>Data de nascimento</label>
+                <label>Data de nascimento:</label>
                 <input className="Input-form-cadastro" type="date" required placeholder="Informe a data de nascimento"></input>
 
-                <label>E-mail</label>
+                <label>E-mail:</label>
                 <input className="Input-form-cadastro" type="email" required placeholder="Informe seu email"></input>
 
-                <label>Senha</label>
+                <label>Senha:</label>
                 <input className="Input-form-cadastro" type="password" required placeholder="Informe sua senha"></input>
 
-                <button className="btn-cadastrar">Cadastre-se</button>
+                <button className="btn-cadastrar" onClick={() => cadastrar()}>Cadastre-se</button>
 
             </form>
 

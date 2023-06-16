@@ -5,12 +5,9 @@ import "./FormNewBook/FormNewBook.css"
 
 const TableBooks = () => {
 
-    const books = ([
-        { id: 1, title: 'Cinderela', genre: 'Infantil', author: ' Charles Perrault', price: 12.99 },
-        { id: 2, title: 'O pequeno príncipe', genre: 'Infantil', author: 'Antoine de Saint-Exupéry', price: 14.99 },
-        { id: 3, title: 'Chapeuzinho vermelho', genre: 'Infantil', author: 'Charles Perrault', price: 12.99 },
-        { id: 4, title: 'A bela e a fera', genre: 'Infantil', author: 'Gabrielle-Suzanne de Villeneuve', price: 12.99 },
-    ]);
+    // Script
+
+    const dados = ([]);
 
 
     return (
@@ -35,17 +32,17 @@ const TableBooks = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {books.map((book) => (
-                            <tr key={book.id}>
-                                <td>{book.id}</td>
+                        {dados.map((dado) => (
+                            <tr key={dado.id}>
+                                <td>{dado.id}</td>
 
-                                <td>{book.title}</td>
+                                <td>{dado.title}</td>
 
-                                <td>{book.genre}</td>
+                                <td>{dado.genre}</td>
 
-                                <td>{book.author}</td>
+                                <td>{dado.author}</td>
 
-                                <td>{book.price}</td>
+                                <td>{dado.price}</td>
 
                                 <td>
 

@@ -13,7 +13,7 @@ const Footer = () => {
                         e-commerce de livros usando o framework React. 
                         somos um grupo de três estudantes de ADS (análise e desenvolvimento
                         de sistemas), Mais informações sobre a equipe por trás desse sistema em
-                        "Sobre".
+                        <Link to="/sobre"> Sobre</Link>.
                     </p>
                 </div>
 
