@@ -1,7 +1,7 @@
 .container {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  max-width: 70%;
+  max-width: 95%;
   margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -14,10 +14,33 @@ table {
 }
 
 th {
-
   background-color: #070707;
   font-size: large;
+}
 
+ th .btn-atualizar{
+  width: 65%;
+  text-align: end;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 3px;
+  padding-right: 5px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+th .btn-atualizar:hover{
+  background-color: rgb(3, 172, 3);
+  border-radius: 10px;
+  padding: 3px;
+  padding-right: 5px;
+  color: #070707;
 }
 
 td{

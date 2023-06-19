@@ -3,11 +3,12 @@
   border-radius: 10px;
   margin: auto;
   margin-bottom: 20px;
-  max-width: 100vh;
+  max-width: 80%;
   
 }
 
 .pAddNewBook{
+  margin-left: 20px;
   padding-top: 15px;
   padding-left: 20px;
   text-align: start;
@@ -15,7 +16,7 @@
 
 .Form-new-book {
     display: flex;
-    width: 100%;
+    width: 95%;
     padding-bottom: 15px;
     padding-left: 18px;
     gap: 5px;
@@ -27,7 +28,6 @@
 
   .Form-new-book input,
   .Form-new-book select {
-    width: 15vh;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -36,20 +36,20 @@
     box-sizing: border-box;
     outline: none;
     overflow: hidden;
-    
+    margin: auto;
   }
 
-  .Form-new-book select .genero{
+  .Form-new-book select .Category{
     background-color: #1c1c1c;
   }
 
- .Form-new-book select .infoGen{
+ .Form-new-book select .infoCategory{
     background-color: #1c1c1c;
     color: #676868;
   }
 
   .buttonSubmit{
-    width: 15vh;
+    width: 15%;
     padding: 10px;
     background-color: #2297fd;
     color: #1c1c1c;

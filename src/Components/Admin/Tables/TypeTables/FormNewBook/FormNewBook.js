@@ -11,27 +11,31 @@ const FormNewBook = () => {
 
       <form className='Form-new-book'>
 
-        <input type="number" id="id" name="id" required placeholder="Id" value="" />
+        <input type="text" id="Title" name="title" required placeholder="Título"  />
 
-        <input type="text" id="title" name="title" required placeholder="Título" value="" />
+        <input type="number" id="pages" name="pages" required placeholder="Páginas" />
 
-        <select id="gender" name="gender" required>
-          <option className="infoGen">Gênero</option>
-          <option className="genero">Aventura</option>
-          <option className="genero">Suspense</option>
-          <option className="genero">Comédia</option>
-          <option className="genero">Mistério</option>
-          <option className="genero">Infantil</option>
-          <option className="genero">Terror</option>
-          <option className="genero">Poema</option>
-          <option className="genero">Educativo</option>
-          <option className="genero">Fábula</option>
-          <option className="genero">Ficção</option>
+        <input type="text" id="UrlImg" name="UrlImg" required placeholder="URL da imagem"/>
+
+        <input type="number" id="Price" name="price" required placeholder="Preço" />
+
+        <input type="text" id="Author" name="author" required placeholder="Autor"/>
+
+        <input type="text" id="Editora" name="Editora" required placeholder="Editora" />
+
+        <select id="Category" name="Category" required>
+          <option className="infoCategory">Gênero</option>
+          <option className="Category">Aventura</option>
+          <option className="Category">Suspense</option>
+          <option className="Category">Comédia</option>
+          <option className="Category">Mistério</option>
+          <option className="Category">Infantil</option>
+          <option className="Category">Terror</option>
+          <option className="Category">Poema</option>
+          <option className="Category">Educativo</option>
+          <option className="Category">Fábula</option>
+          <option className="Category">Ficção</option>
         </select>
-
-        <input type="text" id="author" name="author" required placeholder="Autor" />
-
-        <input type="text" id="cost" name="cost" required placeholder="Preço" />
 
         <button type="submit" className="buttonSubmit">
           + Novo livro

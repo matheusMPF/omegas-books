@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import FormNewBook from "./FormNewBook/FormNewBook";
 import "./FormNewBook/FormNewBook.css"
+import http from '../../../../configAxios';
 
 
 const TableBooks = () => {
 
-    // Script
+    const [dados, setDados] = useState([])
 
-    const dados = ([]);
+    async function buscarDados() {
+        return http.get("/api/bookstore/admin/livro/list")
 
+            .then(resp => {
+                return resp.data;
+            })
+            .catch(erro => {
+                console.log(erro)
+            })
+    }
+
+    async function atualizarBooks() {
+        const listBooks = await buscarDados().then();
+        console.log(listBooks)
+        setDados(listBooks)
+    }
+
+    useEffect(() => {
+        atualizarBooks();
+    }, []);
 
     return (
         <div className="container">
@@ -22,43 +41,50 @@ const TableBooks = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Id</th>
                             <th>Título</th>
-                            <th>Genêro</th>
-                            <th>Autor</th>
+                            <th>Páginas</th>
+                            <th>Imagem (URL)</th>
                             <th>Preço</th>
-                            <th></th>
-                            <th></th>
+                            <th>Destaque</th>
+                            <th>Ativo</th>
+                            <th>Autor</th>
+                            <th>Editora</th>
+                            <th>Categotia</th>
+                            <th className='area-btn'></th>
+                            <th className='area-btn'>
+                                <button className='btn-atualizar' onClick={() => atualizarBooks()}>Atualizar</button>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        {dados.map((dado) => (
-                            <tr key={dado.id}>
-                                <td>{dado.id}</td>
 
-                                <td>{dado.title}</td>
+                        {dados ?
 
-                                <td>{dado.genre}</td>
+                            (dados.map((dado) => (
+                                <tr key={dado.id}>
+                                    <td>{dado.titulo}</td>
+                                    <td>{dado.paginas}</td>
+                                    <td>{dado.pathFoto}</td>
+                                    <td>{dado.preco}</td>
+                                    <td>{dado.destaque}</td>
+                                    <td>{dado.ativo}</td>
+                                    <td>{dado.autor}</td>
+                                    <td>{dado.editora}</td>
+                                    <td>{dado.categoria}</td>
 
-                                <td>{dado.author}</td>
+                                    <td>
+                                        <button className='editar'>✏️</button>
+                                    </td>
+                                    <td>
+                                        <button className='excluir'>X</button>
+                                    </td>
 
-                                <td>{dado.price}</td>
+                                </tr>
+                            )))
+                            :
 
-                                <td>
-
-                                    <button className='editar'>✏️</button>
-
-                                </td>
-
-                                <td>
-                                    <button className='excluir'>X</button>
-                                </td>
-
-
-
-
-                            </tr>
-                        ))}
+                            (<td><p>Não existem dados</p></td>)
+                        }
                     </tbody>
                 </table>
 
