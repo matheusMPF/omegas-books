@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import FormNewBook from "./FormNewBook/FormNewBook";
 import "./FormNewBook/FormNewBook.css"
 import http from '../../../../configAxios';
@@ -25,9 +25,9 @@ const TableBooks = () => {
         setDados(listBooks)
     }
 
-    useEffect(() => {
-        atualizarBooks();
-    }, []);
+    // useEffect(() => {
+    //     atualizarBooks();
+    // }, []);
 
     return (
         <div className="container">

@@ -50,19 +50,17 @@ const FormNewBook = () => {
 
       <form className='Form-new-book' onSubmit={(event) => cadastrarNewBook(event)}>
 
-        <input type="number" estado required placeholder="Id" value={id} setValue={setId} />
+        <input type="text" required placeholder="Título" valor={title} setValor={setTitle} />
 
-        <input type="text" required placeholder="Título" value={title} setValue={setTitle} />
+        <input type="number"  placeholder="Páginas" valor={pages} setValor={setPages} />
 
-        <input type="number" required placeholder="Páginas" value={pages} setValue={setPages} />
+        <input type="number" step={.01} required placeholder="Preço" valor={price} setValor={setPrice} />
 
-        <input type="text" required placeholder="Preço" value={price} setValue={setPrice} />
+        <input type="text" required placeholder="Autor" valor={author} setValor={setAuthor} />
 
-        <input type="text" required placeholder="Autor" value={author} setValue={setAuthor} />
+        <input type="text" required placeholder="Editora" valor={editory} setValor={setEditory} />
 
-        <input type="text" required placeholder="Editora" value={editory} setValue={setEditory} />
-
-        <select required value={category} setValue={setCategory} >
+        <select required valor={category} setValor={setCategory} >
           <option className="infoCategory">Categotia</option>
           <option className="Category">Aventura</option>
           <option className="Category">Suspense</option>
@@ -76,8 +74,7 @@ const FormNewBook = () => {
           <option className="Category">Ficção</option>
         </select>
 
-        <button className="buttonSubmit" valor="addBook" 
-        onClick={() => {console.log('Livro cadastrado com sucesso')}}>
+        <button className="buttonSubmit" value="addBook"  type='submit'>
           + Novo livro
         </button>
       </form>

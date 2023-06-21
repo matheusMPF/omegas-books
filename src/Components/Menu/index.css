@@ -28,9 +28,9 @@ nav div{
 }
 
 .Logo:hover {
-  color: #ffea00;
-  text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00, 0 0 30px #ffea00, 0 0 40px
-   #ffea00, 0 0 70px #ffea00, 0 0 80px #ffea00, 0 0 100px #ffea00, 0 0 150px #ffea00;
+  color: #2297fd;
+  text-shadow: 0 0 10px #2297fd, 0 0 20px #2297fd, 0 0 30px #2297fd, 0 0 40px
+  #2297fd, 0 0 70px #2297fd, 0 0 80px #2297fd, 0 0 100px #2297fd, 0 0 150px #2297fd;
   animation: neon-blink 1.5s ease-in-out infinite alternate;
 }
 
