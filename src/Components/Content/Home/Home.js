@@ -13,27 +13,17 @@ const Home = () => {
             <ul className="list-books">
 
                 <CardBooks nameBook="Cinderela" src={Cinderela} alt="Cinderela" genero="Infantil" 
-                resumo="'Cinderela' é a história de uma jovem que vive uma vida difícil com sua madrasta e irmãs más. Com 
-                a ajuda de sua fada madrinha, ela tem a oportunidade de comparecer a um baile real, onde encanta 
-                a todos. No entanto, há uma condição para sua presença no baile. A história segue as aventuras e 
-                desafios que Cinderela enfrenta enquanto busca realizar seu sonho." />
+                price="R$ 19,99" pages= "Paginas: 10" author= "Autor: Grimm" editory="Editora: Disney"
+                />
 
                 <CardBooks nameBook="A bela e a fera" src={BelaFera} alt="A bela e a fera" genero="Infantil" 
-                resumo="'Bela e a Fera' é a história de uma jovem chamada Bela que se sacrifica para 
-                salvar seu pai e acaba se tornando prisioneira de uma Fera em um castelo encantado. 
-                A história aborda a relação complexa entre Bela e a Fera, explorando temas como 
-                aparência versus essência e o poder do amor verdadeiro." />
+                price="R$ 19,99" pages= "Paginas: 12" author= "Autor: Gabrielle Suzanne" editory="Editora: Disney" />
 
                 <CardBooks nameBook="Chapeuzinho Vermelho" src={Chapeuzinho} alt="Chapeuzinho Vermelho" genero="Infantil" 
-                resumo="'Chapeuzinho Vermelho' é a história de uma garotinha que é enviada pela sua mãe para 
-                levar uma cesta de comida para a avó doente. No caminho, ela encontra um lobo mau que tenta 
-                enganá-la e chegar primeiro à casa da avó. A história destaca os perigos de confiar em estranhos 
-                e a importância de seguir as instruções dos pais." />
+                price="9,99"  pages= "Paginas: 7" author= "Autor: Perralt" editory="Editora: Moinhos" />
 
                 <CardBooks nameBook="O pequeno príncipe" src={PequenoPrincipe} alt="Chapeuzinho Vermelho" genero="Infantil" 
-                resumo="'O Pequeno Príncipe' é uma história encantadora sobre um pequeno príncipe que cultiva uma 
-                rosa especial em seu planeta. A relação entre o pequeno príncipe e sua rosa é cheia de amor, 
-                cuidado e descobertas sobre o valor da amizade e da conexão emocional." />
+                price="25,99"  pages= "Paginas: 18" author= "Autor: Antoine de Saint-Exupéry" editory="Editora:  Grupo Companhia das Letras" />
 
             </ul>
 

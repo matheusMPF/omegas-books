@@ -18,8 +18,13 @@ const CardBooks = (props) => {
                 </ul>
 
 
-                <p className="resumo">{props.resumo}
-                </p>
+                <p className="price">{props.price}</p>
+                <p className="info">{props.pages}</p>
+                <p className="info">{props.author}</p>
+                <p className="info">{props.editory}</p>
+                
+
+                <button className="btn-purchase">Comprar</button>
             </li>
         
     );
