@@ -43,7 +43,6 @@ const TableBooks = () => {
                         <tr>
                             <th>Título</th>
                             <th>Páginas</th>
-                            <th>Imagem (URL)</th>
                             <th>Preço</th>
                             <th>Ativo</th>
                             <th>Autor</th>
@@ -65,7 +64,6 @@ const TableBooks = () => {
                                 <tr key={dado.id}>
                                     <td>{dado.titulo}</td>
                                     <td>{dado.paginas}</td>
-                                    <td>{dado.pathFoto}</td>
                                     <td>{dado.preco}</td>
                                     <td>{dado.ativo}</td>
                                     <td>{dado.autor}</td>
