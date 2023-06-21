@@ -45,14 +45,15 @@ const TableBooks = () => {
                             <th>Páginas</th>
                             <th>Imagem (URL)</th>
                             <th>Preço</th>
-                            <th>Destaque</th>
                             <th>Ativo</th>
                             <th>Autor</th>
                             <th>Editora</th>
                             <th>Categotia</th>
                             <th className='area-btn'></th>
                             <th className='area-btn'>
-                                <button className='btn-atualizar' onClick={() => atualizarBooks()}>Atualizar</button>
+                                <button className='btn-atualizar'
+                                    onClick={() => atualizarBooks()}>Atualizar
+                                </button>
                             </th>
                         </tr>
                     </thead>
@@ -66,7 +67,6 @@ const TableBooks = () => {
                                     <td>{dado.paginas}</td>
                                     <td>{dado.pathFoto}</td>
                                     <td>{dado.preco}</td>
-                                    <td>{dado.destaque}</td>
                                     <td>{dado.ativo}</td>
                                     <td>{dado.autor}</td>
                                     <td>{dado.editora}</td>

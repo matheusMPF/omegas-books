@@ -3,6 +3,9 @@ body {
   padding: 0;
   background-color: #1b1f27;
   margin: auto;
-  color: white;
+}
+
+body *{
+  box-sizing: border-box;
 }
 

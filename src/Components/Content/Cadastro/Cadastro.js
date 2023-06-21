@@ -2,39 +2,45 @@ import "./Cadastro.css"
 
 const Cadastro = () => {
 
-
-
     function cadastrar() {
-        var valorInputName = document.getElementById('nome')
-        var nome = valorInputName.value
+     var valorInputName = document.getElementById('name')
+       var nome = valorInputName.value
 
-        alert(nome + " Seu cadastro foi realizado com sucesso")
+        alert(nome + " seu cadastro foi realizado com sucesso")
     }
 
     return (
-        <div className="Container-form">
+        <div className="main_form">
 
-            <form className="Form-Cadastro">
+                <form className="form">
 
-                <p className="pCadastre-se">Faça seu cadastro:</p>
+                    <div className="card_form">
 
-                <label>Nome:</label>
-                <input className="Input-form-cadastro" id="nome" type="text" required placeholder="Informe seu nome"></input>
+                        <h1>Cadastre-se</h1>
 
-                <label>Data de nascimento:</label>
-                <input className="Input-form-cadastro" type="date" required placeholder="Informe a data de nascimento"></input>
+                        <div className="textfield">
+                            <label>Nome</label>
+                            <input type="name" name="name" placeholder="Nome" id="name" />
+                        </div>
 
-                <label>E-mail:</label>
-                <input className="Input-form-cadastro" type="email" required placeholder="Informe seu email"></input>
+                        <div className="textfield">
+                            <label for="usuario">E-mail</label>
+                            <input type="email" name="usuario" placeholder="E-mail" />
+                        </div>
 
-                <label>Senha:</label>
-                <input className="Input-form-cadastro" type="password" required placeholder="Informe sua senha"></input>
+                        <div className="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha" />
+                        </div>
 
-                <button className="btn-cadastrar" onClick={() => cadastrar()}>Cadastre-se</button>
+                        <button className="btn" onClick={() => cadastrar()}>Cadastrar-se</button>
 
-            </form>
+                        <p id="text_alternative">Já possui uma conta? <a href="//" id="link_alternative">Logar</a></p>
 
-        </div>
+                    </div>
+                </form>
+            </div>
+
     )
 
 }
